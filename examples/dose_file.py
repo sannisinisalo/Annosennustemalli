@@ -12,7 +12,7 @@ from pathlib import Path
 
 # Potilaan doseds-kansion polku
 doseds_polku = Path(
-    r"C:\Users\User01\GRADU\Aineisto\VN0ds\Patient1_VN0\doseds"
+    r"C:\Users\User01\GRADU\Aineisto\VN0ds\Patient10_VN0\doseds"
 )
 
 # Etsitään RD-alkuinen tiedosto vain suoraan doseds-kansiosta

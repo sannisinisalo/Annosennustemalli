@@ -329,11 +329,9 @@ def save_mask_as_dicom_series(
         new_ds.SOPInstanceUID = generate_uid()
         new_ds.InstanceNumber = idx + 1
 
-        # Päivitetään ImagePositionPatient Z-koordinaatti
+
+        # Käytetään täsmälleen vastaavan CT-viipaleen sijaintia
         new_ds.ImagePositionPatient = list(ct.ImagePositionPatient)
-        new_ds.ImagePositionPatient[2] = (
-            ct.ImagePositionPatient[2] + idx * ct.SliceThickness
-        )
 
         new_ds.PixelSpacing = list(ct.PixelSpacing)
         new_ds.SliceThickness = ct.SliceThickness

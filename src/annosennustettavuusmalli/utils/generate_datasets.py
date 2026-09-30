@@ -61,9 +61,25 @@ def generate_datasets(
             ds_ct = dcmread(os.path.join(ct_path, ct_file))
             pixel_spacing = float(list(ds_ct.PixelSpacing)[0])
 
+            #print(f"\nPotilas: {subject}")
+            #print("DEBUG: ennen kuvien lataamista")
+            
             ct_data = tio.ScalarImage(ct_path)
+            #print("DEBUG: CT ladattu")
+            #print("CT spacing:", ct_data.spacing)
+            #print("CT shape:", ct_data.shape)
+            
             mask_data = tio.ScalarImage(mask_path)
+            #print("DEBUG: mask ladattu")
+            #print("Mask spacing:", mask_data.spacing)
+            #print("Mask shape:", mask_data.shape)
+            
             dose_data = tio.ScalarImage(dose_path)
+            #print("DEBUG: dose ladattu")
+            #print("Dose spacing:", dose_data.spacing)
+            #print("Dose shape:", dose_data.shape)
+                            
+                
             # --- Muunnokset ---
             ct_data.set_data(ct_data.data.float())
             dose_data.set_data(dose_data.data.float())
