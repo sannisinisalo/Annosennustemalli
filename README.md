@@ -94,7 +94,7 @@ Kaikki esikäsittelyn koodit lukevat DICOM eli .dcm muotoista dataa.
 
 ## Lisätietoa
 
-Tarkempi koodien dokumentointi ja selostus mallin jatkokäytöstä löytyvät projektista kirjoitetusta [Pro Gradu tutkielmasta](https://jyx.jyu.fi/jyx/Record/jyx_123456789_94998?sid=273647110).
+Tarkempi koodien dokumentointi ja selostus mallin jatkokäytöstä löytyvät projektista kirjoitetusta [Pro Gradu tutkielmasta](https://jyx.jyu.fi/jyx/Record/jyx_123456789_111524?sid=848959088).
 Lisätietoa saa myös Akseli Leinon [artikkelista](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.17410), joka toimi pohjana tälle projektille ja gradulle.
 
 
